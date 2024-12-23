@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="signup-header">
+      <!-- logo container -->
+      <div class="signup-header__logo-container">
+        <img
+          class="signup-header__logo-container__logo-image"
+          src="./assets/shared/logo.svg"
+          alt="Officelite logo"
+        />
+      </div>
+      <!-- description and text container -->
+      <div class="signup-header__description-and-text-container">
+        <h1 class="signup-header__description-and-text-container__title">
+          Work smarter. Save time.
+        </h1>
+        <p class="signup-header__description-and-text-container__description">
+          Easily manage your projects. Get on the list and receive in-app perks
+          available only to early subscribers. We are moving into final
+          development and getting ready for official launch soon.
+        </p>
+      </div>
+
+      <!-- date container -->
+      <section
+        class="signup-header__countdown-container"
+        aria-labelledby="countdown-title"
+      >
+        <!-- footer title -->
+        <h3
+          id="countdown-title"
+          class="signup-header__countdown-container__title"
+        >
+          COMING
+          <span class="signup-header__countdown-container__title__date"
+            >4 NOV 2025</span
+          >
+        </h3>
+        <!-- date container -->
+        <div
+          class="signup-header__countdown-container__date-boxes-container"
+          aria-live="polite"
+        >
+          <!-- days -->
+          <div
+            class="signup-header__countdown-container__date-boxes-container__individual-date-box"
+            id="days"
+            aria-label="Days"
+          >
+            <p>47</p>
+            <span>days</span>
+          </div>
+          <!-- hours -->
+          <div
+            class="signup-header__countdown-container__date-boxes-container__individual-date-box"
+            id="hours"
+            aria-label="Hours"
+          >
+            <p>07</p>
+            <span>hours</span>
+          </div>
+          <!-- min -->
+          <div
+            class="signup-header__countdown-container__date-boxes-container__individual-date-box"
+            id="minutes"
+            aria-label="Minutes"
+          >
+            <p>56</p>
+            <span>min</span>
+          </div>
+          <!-- sec -->
+          <div
+            class="signup-header__countdown-container__date-boxes-container__individual-date-box"
+            id="seconds"
+            aria-label="Seconds"
+          >
+            <p>14</p>
+            <span>sec</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORM -->
+      <form
+        action="/"
+        class="signup-header__form"
+        aria-labelledby="form-title"
+        id="signup-form"
+      >
+        <h2 id="form-title" class="visually-hidden">Sign Up Form</h2>
+        <label for="name">Name</label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="signup-header__form__input error"
+            aria-describedby="name-error"
+            aria-invalid="true"
+          /><img
+            class="error-icon"
+            src="./assets/sign-up/icon-cross.svg"
+            alt="Error"
+          />
+          <p id="name-error" class="error-message">
+            Please enter a valid name (letters, spaces, hyphens, or apostrophes
+            only).
+          </p>
+        </div>
+
+        <label for="email">Email Address</label>
+        <div class="input-wrapper">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="signup-header__form__input error"
+            aria-describedby="email-error"
+            aria-invalid="true"
+          /><img
+            class="error-icon"
+            src="./assets/sign-up/icon-cross.svg"
+            alt="Error"
+          />
+          <p id="email-error" class="error-message">
+            Please enter a valid email address.
+          </p>
+        </div>
+
+        <label for="basic-pack" id="signup-header__form__select-label"
+          >Select a plan</label
+        >
+        <select
+          name="subscription-type"
+          id="basic-pack"
+          class="signup-header__form__select"
+        >
+          <option
+            class="signup-header__form__select__option"
+            value="free"
+            selected=""
+          >
+            Basic pack Free
+          </option>
+          <option class="signup-header__form__select__option" value="pro">
+            Pro pack $9.99
+          </option>
+          <option class="signup-header__form__select__option" value="ultimate">
+            Ultimate pack $19.99
+          </option>
+        </select>
+
+        <label for="phone-number">Phone Number</label>
+        <div class="input-wrapper">
+          <input
+            type="tel"
+            name="phone-number"
+            id="phone-number"
+            class="signup-header__form__input error"
+            aria-describedby="phone-error"
+            aria-invalid="true"
+          /><img
+            class="error-icon"
+            src="./assets/sign-up/icon-cross.svg"
+            alt="Error"
+          />
+          <p id="phone-error" class="error-message">
+            Please enter a valid phone number (10 to 15 digits).
+          </p>
+        </div>
+
+        <label for="company">Company</label>
+        <div class="input-wrapper">
+          <input
+            type="text"
+            name="company"
+            id="company"
+            class="signup-header__form__input error"
+            aria-describedby="company-error"
+            aria-invalid="true"
+          /><img
+            class="error-icon"
+            src="./assets/sign-up/icon-cross.svg"
+            alt="Error"
+          />
+          <p id="company-error" class="error-message">
+            Please enter a valid company name (letters, numbers, &amp;, ., etc.
+            allowed).
+          </p>
+        </div>
+
+        <button
+          type="submit"
+          value="Get on the list"
+          class="signup-header__form__submit"
+        >
+          Get on the list
+        </button>
+      </form>
+
+      <section class="signup-header__background-design-container">
+        <div
+          class="signup-header__background-design-container__background-design-div"
+        >
+          <img
+            class="signup-header__background-design-container__background-design-div__background-design-image"
+            src="./assets/sign-up/bg-pattern-side.svg"
+            alt="spiral design image"
+          />
+        </div>
+      </section>
+    </header>
+    <script src="./sign-up.js"></script>
+  </body>
+</html>

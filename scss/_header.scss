@@ -1,0 +1,59 @@
+// HEADER.SCSS
+
+.header {
+  padding: 3rem 1rem;
+  position: relative;
+  margin-bottom: 50rem;
+
+  &__logo-container {
+    &__logo-image {
+      display: block;
+      margin: auto;
+      width: 40%;
+    }
+  }
+
+  &__hero-section {
+    &__hero-image {
+      width: 60%;
+      display: block;
+      margin: 5rem auto 3rem;
+    }
+
+    &__title-and-description-container {
+      text-align: center;
+
+      &__title {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        color: map-get($colors, very-dark-navy-blue);
+      }
+
+      &__description {
+        font-size: 0.9rem;
+        margin-bottom: 2.5rem;
+        line-height: 1.5;
+        color: map-get($colors, gray);
+      }
+
+      &__button {
+        font-size: 0.9rem;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        background-color: map-get($colors, mario-sky-blue);
+        color: map-get($colors, white);
+      }
+      &__button:hover {
+        background-color: map-get($colors, dark-baby-blue);
+      }
+    }
+  }
+
+  &__background-design {
+    position: absolute;
+    width: 100%;
+    top: -12.5%;
+    left: 0;
+    z-index: -1;
+  }
+}

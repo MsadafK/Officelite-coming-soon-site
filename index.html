@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Officelite coming soon site</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- logo container -->
+      <div class="header__logo-container">
+        <!-- logo image -->
+        <img
+          class="header__logo-container__logo-image"
+          src="./assets/shared/logo.svg"
+          alt="Officelite logo"
+        />
+      </div>
+
+      <!-- hero section -->
+      <section class="header__hero-section">
+        <!-- hero image -->
+        <img
+          class="header__hero-section__hero-image"
+          src="./assets/home/illustration-charts.svg"
+          alt="Illustration of charts"
+        />
+        <!-- hero content -->
+        <div class="header__hero-section__title-and-description-container">
+          <!-- title -->
+          <h1
+            class="header__hero-section__title-and-description-container__title"
+          >
+            A simple solution to complex tasks is coming soon
+          </h1>
+          <!-- description -->
+          <p
+            class="header__hero-section__title-and-description-container__description"
+          >
+            Say goodbye to inefficient juggling of multiple apps, teams, and
+            projects. Officelite is the new collaboration platform built with an
+            intuitive interface to improve productivity.
+          </p>
+
+          <!-- button -->
+          <a
+            class="header__hero-section__title-and-description-container__button"
+            href="./sign-up.html"
+            class="header__hero-section__button"
+            >Get started</a
+          >
+        </div>
+      </section>
+
+      <!-- header background design -->
+      <img
+        class="header__background-design"
+        src="./assets/home/bg-pattern-header.svg"
+        alt=""
+      />
+    </header>
+
+    <!-- main -->
+    <main class="main">
+      <section class="main__cards-section">
+        <h2 class="main__cards-section__title">
+          This section is representing the pricing cards!
+        </h2>
+        <!-- basic card -->
+        <div class="main__cards-section__individual-card basic-card">
+          <h3 class="main__cards-section__individual-card__title">Basic</h3>
+          <div class="main__cards-section__individual-card__price">
+            <p class="main__cards-section__individual-card__price__price-tag">
+              Free
+            </p>
+            <span
+              class="main__cards-section__individual-card__price__per-user-tag"
+              >Up to 5 users for free</span
+            >
+          </div>
+          <div class="main__cards-section__individual-card__features">
+            <p>Basic document collaboration</p>
+            <p>2 gb storage</p>
+            <p>Great security and support</p>
+          </div>
+          <a
+            class="main__cards-section__individual-card__button"
+            href="./sign-up.html"
+            >Try for Free</a
+          >
+        </div>
+
+        <!-- pro card -->
+        <div class="main__cards-section__individual-card pro-card">
+          <h3 class="main__cards-section__individual-card__title">Pro</h3>
+          <div class="main__cards-section__individual-card__price">
+            <p class="main__cards-section__individual-card__price__price-tag">
+              $9.99
+            </p>
+            <span
+              class="main__cards-section__individual-card__price__per-user-tag"
+              >Per user, billed monthly</span
+            >
+          </div>
+          <div class="main__cards-section__individual-card__features">
+            <p>All essential integrations</p>
+            <p>50 gb storage</p>
+            <p>More control and insights</p>
+          </div>
+          <a
+            class="main__cards-section__individual-card__button"
+            href="./sign-up.html"
+            >Try for Free</a
+          >
+
+          <!-- pricing background desing image -->
+          <img
+            class="pro-card__background-design-image"
+            src="./assets/home/bg-pattern-pricing.svg"
+            alt=""
+          />
+        </div>
+
+        <!-- ultimate card -->
+        <div class="main__cards-section__individual-card ultimate-card">
+          <h3 class="main__cards-section__individual-card__title">Ultimate</h3>
+          <div class="main__cards-section__individual-card__price">
+            <p class="main__cards-section__individual-card__price__price-tag">
+              $19.99
+            </p>
+            <span
+              class="main__cards-section__individual-card__price__per-user-tag"
+              >Per user, billed monthly</span
+            >
+          </div>
+          <div class="main__cards-section__individual-card__features">
+            <p>Robust work management</p>
+            <p>100 gb storage</p>
+            <p>VIP support</p>
+          </div>
+          <a
+            class="main__cards-section__individual-card__button"
+            href="./sign-up.html"
+            >Try for Free</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <section
+        class="footer__countdown-container"
+        aria-labelledby="footer-countdown-title"
+      >
+        <!-- footer title -->
+        <h3
+          id="footer-countdown-title"
+          class="footer__countdown-container__title"
+        >
+          COMING
+          <span class="footer__countdown-container__title__date"
+            >4 NOV 2025</span
+          >
+        </h3>
+        <!-- date container -->
+        <div
+          class="footer__countdown-container__date-boxes-container"
+          aria-live="polite"
+        >
+          <!-- days -->
+          <div
+            class="footer__countdown-container__date-boxes-container__individual-date-box"
+            id="days"
+            aria-label="Days"
+          >
+            <p>47</p>
+            <span>days</span>
+          </div>
+          <!-- hours -->
+          <div
+            class="footer__countdown-container__date-boxes-container__individual-date-box"
+            id="hours"
+            aria-label="Hours"
+          >
+            <p>07</p>
+            <span>hours</span>
+          </div>
+          <!-- min -->
+          <div
+            class="footer__countdown-container__date-boxes-container__individual-date-box"
+            id="minutes"
+            aria-label="Minutes"
+          >
+            <p>56</p>
+            <span>min</span>
+          </div>
+          <!-- sec -->
+          <div
+            class="footer__countdown-container__date-boxes-container__individual-date-box"
+            id="seconds"
+            aria-label="Seconds"
+          >
+            <p>14</p>
+            <span>sec</span>
+          </div>
+        </div>
+
+        <!-- get started button -->
+        <a
+          class="footer__countdown-container__get-started-button"
+          href="./sign-up.html"
+          >Get started</a
+        >
+      </section>
+
+      <!-- footer background image -->
+      <img
+        class="footer__background-image"
+        src="./assets/home/bg-pattern-footer.svg"
+        alt="Footer background pattern"
+      />
+    </footer>
+    <script>
+      const countdownDate = new Date("Nov 4, 2025 00:00:00").getTime();
+
+      const countdownFunction = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").querySelector("p").innerText = days;
+        document.getElementById("hours").querySelector("p").innerText = hours;
+        document.getElementById("minutes").querySelector("p").innerText =
+          minutes;
+        document.getElementById("seconds").querySelector("p").innerText =
+          seconds;
+
+        if (distance < 0) {
+          clearInterval(countdownFunction);
+          document.getElementById("days").querySelector("p").innerText = "0";
+          document.getElementById("hours").querySelector("p").innerText = "0";
+          document.getElementById("minutes").querySelector("p").innerText = "0";
+          document.getElementById("seconds").querySelector("p").innerText = "0";
+        }
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+// MEDIA QUERIES
+
+// 375px and more
+@media (min-width: 375px) {
+  .header {
+    padding: 3rem 2.75rem;
+  }
+  .main {
+    &__cards-section {
+      &__individual-card {
+        margin: 2rem 2.5rem;
+      }
+    }
+  }
+  .footer {
+    padding: 50rem 2.85rem 5rem;
+  }
+}
+
+// 425px and more
+@media (min-width: 425px) {
+  .header {
+    padding: 3rem 4.325rem;
+  }
+  .main {
+    &__cards-section {
+      &__individual-card {
+        margin: 2rem 4.075rem;
+      }
+    }
+  }
+  .footer {
+    padding: 50rem 4.425rem 5rem;
+  }
+}
+
+// 768px and more
+@media (min-width: 768px) {
+  .header {
+    padding: 3rem;
+    margin-bottom: 37.5rem;
+  }
+  .header {
+    &__logo-container {
+      &__logo-image {
+        margin: 0;
+        width: 25%;
+      }
+    }
+  }
+  .header {
+    &__hero-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3.5rem;
+      margin-top: 3rem;
+
+      &__hero-image {
+        margin: auto;
+        width: 100%;
+        align-self: center;
+      }
+
+      &__title-and-description-container {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: left;
+        align-self: center;
+
+        &__title {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+  .header__hero-section .header__background-design {
+    position: absolute;
+    width: 75%;
+    top: -26%;
+    left: 53%;
+    right: -28%;
+    z-index: -1;
+  }
+  .header__background-design {
+    position: absolute;
+    width: 70%;
+    top: -25%;
+    left: 50%;
+    z-index: -1;
+  }
+
+  .main {
+    &__cards-section {
+      &__individual-card {
+        margin: 2rem 3rem;
+        padding: 0 3rem 1.25rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        text-align: left;
+
+        &__title {
+          align-self: center;
+        }
+
+        &__features {
+          grid-row: 2/3;
+          margin: 0;
+          align-self: center;
+        }
+
+        &__price {
+          margin: 0;
+          grid-column: 1/2;
+          grid-row: 2/3;
+          align-self: center;
+        }
+
+        &__button {
+          grid-column: 1/2;
+          align-self: center;
+          text-align: center;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+  .main__cards-section .pro-card__background-design-image {
+    position: absolute;
+    width: 140%;
+    top: -111%;
+    left: -50%;
+  }
+
+  .footer {
+    padding: 37.5rem 10rem 5rem;
+
+    &__background-image {
+      width: 150%;
+      top: 15%;
+    }
+  }
+}
+
+// 1024px and more
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 15rem;
+
+    &__logo-container,
+    &__hero-section {
+      max-width: 918.4px;
+      margin: 0 auto;
+    }
+    &__logo-container {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .main {
+    margin: 0 3rem;
+
+    &__cards-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      max-width: 918.4px;
+      margin: 0 auto;
+
+      &__individual-card {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        margin: 0;
+        padding: 2rem 0 2.5rem;
+
+        &__button {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .main__cards-section .pro-card__background-design-image {
+    position: absolute;
+    width: 200%;
+    top: -40%;
+    left: -50%;
+  }
+
+  .footer {
+    padding-top: 20rem;
+    padding-bottom: 7rem;
+
+    &__countdown-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      max-width: 704px;
+      margin: 0 auto;
+
+      &__title {
+        text-align: left;
+      }
+
+      &__date-boxes-container {
+        margin: 0;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        align-self: center;
+
+        &__individual-date-box {
+          p {
+            font-size: 2.5rem;
+          }
+        }
+      }
+
+      &__get-started-button {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        align-self: flex-start;
+        margin-left: auto;
+      }
+    }
+
+    &__background-image {
+      width: 125%;
+      top: -50%;
+      left: 25%;
+    }
+  }
+}
+
+// 1440px and more
+@media (min-width: 1440px) {
+  .header {
+    &__background-design {
+      top: -50%;
+    }
+  }
+  .header__background-design {
+    width: 64%;
+    top: -60%;
+    left: 55%;
+  }
+  .footer {
+    &__background-image {
+      width: 125%;
+      top: -105%;
+      left: 27.5%;
+    }
+  }
+}

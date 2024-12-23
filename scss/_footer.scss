@@ -1,0 +1,66 @@
+// FOOTER.SCSS
+
+.footer {
+  background-color: map-get($colors, very-dark-navy-blue);
+  padding: 50rem 1rem 5rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+
+  &__countdown-container {
+    &__title {
+      color: map-get($colors, white);
+      letter-spacing: 3.5px;
+      font-weight: map-get($font-weights, regular);
+      &__date {
+        color: map-get($colors, mario-sky-blue);
+      }
+    }
+
+    &__date-boxes-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      margin: 2rem 0 3.5rem;
+      width: 100%;
+
+      &__individual-date-box {
+        width: 20%;
+        background-color: map-get($colors, charcoal-gray);
+        border-radius: 5px;
+
+        p {
+          color: map-get($colors, white);
+          font-size: 1.5rem;
+          font-weight: map-get($font-weights, bold);
+        }
+        span {
+          color: map-get($colors, gray);
+          font-size: 0.85rem;
+        }
+      }
+    }
+
+    &__get-started-button {
+      background-color: map-get($colors, mario-sky-blue);
+      color: map-get($colors, white);
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: map-get($font-weights, medium);
+      z-index: 5;
+    }
+
+    &__get-started-button:hover {
+      background-color: map-get($colors, dark-baby-blue);
+    }
+  }
+
+  &__background-image {
+    position: absolute;
+    width: 250%;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,106 @@
+// MAIN.SCSS
+
+.main {
+  position: relative;
+
+  &__cards-section {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    &__title {
+      display: none;
+    }
+
+    &__individual-card {
+      margin: 2rem 1rem;
+      padding: 3rem 1rem;
+      text-align: center;
+      border-radius: 10px;
+      background-color: map-get($colors, white);
+
+      &__title {
+        color: map-get($colors, very-dark-navy-blue);
+      }
+
+      &__price {
+        margin: 3rem 0;
+        &__price-tag {
+          font-size: 2.5rem;
+          font-weight: map-get($font-weights, bold);
+          color: map-get($colors, very-dark-navy-blue);
+        }
+        &__per-user-tag {
+          font-size: 0.9rem;
+          color: map-get($colors, very-dark-navy-blue);
+        }
+      }
+      &__features {
+        margin: 3rem 0;
+        p {
+          font-size: 0.9rem;
+          color: map-get($colors, gray);
+          margin: 0.5rem 0;
+        }
+      }
+      &__button {
+        padding: 0.75rem 2rem;
+        border-radius: 50px;
+        background-color: map-get($colors, baby-blue);
+        color: map-get($colors, mario-sky-blue);
+        font-weight: map-get($font-weights, semibold);
+        font-size: 0.9rem;
+        z-index: 5;
+      }
+      &__button:hover {
+        background-color: map-get($colors, light-baby-blue);
+      }
+    }
+
+    .pro-card {
+      background-color: map-get($colors, mario-sky-blue);
+      color: map-get($colors, white);
+      position: relative;
+      overflow: hidden;
+
+      .main__cards-section__individual-card__title {
+        color: map-get($colors, white);
+      }
+
+      .main__cards-section__individual-card__price {
+        .main__cards-section__individual-card__price__price-tag {
+          color: map-get($colors, white);
+        }
+        .main__cards-section__individual-card__price__per-user-tag {
+          color: map-get($colors, white);
+        }
+      }
+
+      .main__cards-section__individual-card__features {
+        p {
+          color: map-get($colors, baby-blue);
+        }
+      }
+
+      .main__cards-section__individual-card__button {
+        background-color: map-get($colors, white);
+        color: map-get($colors, mario-sky-blue);
+      }
+
+      .main__cards-section__individual-card__button:hover {
+        color: map-get($colors, baby-blue);
+      }
+
+      // background desing
+      &__background-design-image {
+        position: absolute;
+        width: 200%;
+        top: -50%;
+        left: -50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+// VARIABLES.SCSS
+
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+$font: (
+  kumbh-sans: "Kumbh Sans",
+);
+
+$font-weights: (
+  small: 300,
+  regular: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+);
+
+// colors
+$colors: (
+  mario-sky-blue: #5175ff,
+  charcoal-gray: #333950,
+  gray: #747b95,
+  baby-blue: #cad5ff,
+  light-baby-blue: #e2e7fb,
+  dark-baby-blue: #b3c0f8,
+  very-dark-navy-blue: #29293a,
+  brick-orange: #f05b5b,
+  white: #fff,
+);
